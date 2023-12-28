@@ -1,0 +1,39 @@
+<div class="body">
+    
+    <h3>Details of {{ employee.first_name }}&nbsp;{{employee.last_name}}</h3><hr>
+    <div class="container col-md-8 mt-5 mb-5">
+    <div class="horizontal-table">
+        <table class="table ">
+            <tbody>
+                <tr>
+                    <th scope="row">Employee id:</th>
+                    <td>{{ employee.id }}</td>
+                    
+        
+                </tr>
+                <tr>
+                    <th scope="row">Employee First Name</th>
+                    <td>{{ employee.first_name }}</td>
+                    
+                </tr>
+                <tr>
+                    <th>Employee Last Name</th>
+                    <td>{{ employee.last_name }}</td>
+                    
+                </tr>
+                <tr>
+                    <th>Employee Email</th>
+                    <td>{{ employee.email }}</td>
+                </tr>
+    
+                
+            </tbody>
+        </table>
+    </div>
+        <div class="buttons">
+            <button class="emp" routerLink="/employees">Employee List</button>&nbsp;&nbsp;
+            <button class="delete" (click)="deleteEmployee(employee.id)">Delete</button>&nbsp;&nbsp;
+            <button class="update" routerLink="/updateEmployee/{{employee.id}}">Update</button>
+        </div>
+       
+    </div>

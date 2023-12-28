@@ -1,0 +1,71 @@
+.horizontal-table {
+    display: flex;
+    flex-direction: column; /* Display columns vertically */
+    max-width: 100%; /* Adjust as needed */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.table {
+    display: flex;
+    flex-direction: row; /* Display rows horizontally */
+    border-collapse: collapse; /* Optional: collapse table borders */
+}
+
+th,
+td {
+    flex: 1; /* Each cell takes equal space */
+    border: 1px solid #ddd; /* Optional: cell border */
+    padding: 8px; /* Optional: cell padding */
+    text-align: center; /* Optional: center text */
+}
+.body{
+    border: solid black 1px;
+}
+
+.buttons{
+    margin-top: 10px;
+}
+
+button{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: grey;
+    color: white;
+}
+
+h3{
+    margin: 30px;
+}
+
+.emp{
+    background-color: skyblue;
+    color: black;
+    border-color: skyblue;
+}
+
+.delete{
+    background-color: red;
+    border-color: red;
+}
+
+.update{
+    border-color: grey;
+}
+
+/* Increase the size of rows in the table */
+.table th,
+.table td {
+    padding: 15px 20px; /* Adjust padding to increase cell height and width */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Optional: Increase the font size of headers */
+.table th {
+    font-size: 18px;
+}
+
+/* Optional: Add some spacing between cells */
+.table th,
+.table td {
+    border: 1px solid #ccc; /* Add borders for better visualization */
+}

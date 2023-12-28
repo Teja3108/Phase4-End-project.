@@ -1,0 +1,30 @@
+#body{
+    border: black solid 1px;
+    margin-left: 17%;
+    margin-right: 40%;
+    padding: 40px;
+    
+   
+}
+
+button{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+    text-align: center;
+    margin-right: 370px;
+    padding-bottom: 20px;
+    padding-top: 70px;
+}
+.message{
+    color: red;
+    font-style: italic;
+}
